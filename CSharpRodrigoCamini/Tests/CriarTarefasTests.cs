@@ -81,6 +81,7 @@ namespace CSharpRodrigoCamini.Tests
             string resumo = "Resumo Automação Selenium" + GeneralHelpers.ReturnStringWithRandomCharacters(20);
             string descricao = "Descrição Automação Selneium";
             string mensagemUsuarioCriado = "Operação realizada com sucesso.";
+            string teste = "Teste2";
             #endregion
 
             loginFlows.EfetuarLogin(usuario, password);
