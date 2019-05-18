@@ -66,6 +66,7 @@ namespace CSharpRodrigoCamini.Helpers
                             InternetExplorerOptions ie = new InternetExplorerOptions();
                             INSTANCE = new RemoteWebDriver(new Uri(seleniumHub), ie.ToCapabilities());
                         }
+
                         break;
 
                     case "firefox":

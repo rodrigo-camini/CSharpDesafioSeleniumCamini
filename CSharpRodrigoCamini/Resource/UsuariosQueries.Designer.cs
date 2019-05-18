@@ -68,5 +68,25 @@ namespace CSharpRodrigoCamini.Resource {
                 return ResourceManager.GetString("DeletarUsuario", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT username FROM mantis_user_table
+        ///WHERE username = &apos;$username&apos;.
+        /// </summary>
+        internal static string RetornarNomeUsuario {
+            get {
+                return ResourceManager.GetString("RetornarNomeUsuario", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SELECT password FROM mantis_user_table
+        ///WHERE username = &apos;$username&apos;.
+        /// </summary>
+        internal static string RetornarSenhaUsuario {
+            get {
+                return ResourceManager.GetString("RetornarSenhaUsuario", resourceCulture);
+            }
+        }
     }
 }

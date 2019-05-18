@@ -120,4 +120,12 @@
   <data name="DeletarUsuario" xml:space="preserve">
     <value>DELETE FROM mantis_user_table WHERE username = '$username'</value>
   </data>
+  <data name="RetornarNomeUsuario" xml:space="preserve">
+    <value>SELECT username FROM mantis_user_table
+WHERE username = '$username'</value>
+  </data>
+  <data name="RetornarSenhaUsuario" xml:space="preserve">
+    <value>SELECT password FROM mantis_user_table
+WHERE username = '$username'</value>
+  </data>
 </root>

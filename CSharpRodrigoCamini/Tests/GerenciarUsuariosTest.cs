@@ -80,7 +80,8 @@ namespace CSharpRodrigoCamini.Tests
             gerenciarUsuariosPage.ClicarBotaoCriarUsuario();
 
             Assert.IsTrue(gerenciarUsuariosPage.MensagemBloqueioUsuarioCaracterEspecial().Contains("APPLICATION ERROR #805"));
-
         }
+        
+        
     }
 }

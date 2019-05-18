@@ -10,6 +10,7 @@ using System.IO;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Runtime.CompilerServices;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -91,7 +92,7 @@ namespace CSharpRodrigoCamini.Helpers
         public static string GetRandomIDNumber()
         {
             return Guid.NewGuid().ToString();
-        }       
-    
+        }    
+        
     }
 }

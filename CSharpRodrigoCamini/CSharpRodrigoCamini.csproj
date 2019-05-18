@@ -122,7 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bases\PageBase.cs" />
-    <Compile Include="DataBaseSteps\CriarUsuarioDBSteps.cs" />
+    <Compile Include="DataBaseSteps\UsuarioDBSteps.cs" />
     <Compile Include="Flows\CriarTarefasFlows.cs" />
     <Compile Include="Flows\GerenciarCamposPersonalizadosFlows.cs" />
     <Compile Include="Flows\GerenciarFlows.cs" />
@@ -132,10 +132,12 @@
     <Compile Include="Flows\PerfisGlobaisFlows.cs" />
     <Compile Include="Flows\VerTarefasFlows.cs" />
     <Compile Include="Helpers\AutoInstance.cs" />
+    <Compile Include="Helpers\CreateMD5.cs" />
     <Compile Include="Helpers\DataBaseHelpers.cs" />
     <Compile Include="Helpers\DriverFactory.cs" />
     <Compile Include="Helpers\ExtentReportHelpers.cs" />
     <Compile Include="Helpers\GeneralHelpers.cs" />
+    <Compile Include="Helpers\StringCipher.cs" />
     <Compile Include="Pages\CriarTarefasPage.cs" />
     <Compile Include="Pages\GerenciarCamposPersonalizadosPage.cs" />
     <Compile Include="Pages\GerenciarConfiguracaoPage.cs" />

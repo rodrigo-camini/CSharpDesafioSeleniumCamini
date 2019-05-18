@@ -1,4 +1,5 @@
 ﻿using CSharpRodrigoCamini.Bases;
+using CSharpRodrigoCamini.DataBaseSteps;
 using CSharpRodrigoCamini.Flows;
 using CSharpRodrigoCamini.Helpers;
 using CSharpRodrigoCamini.PageObjects;
@@ -9,7 +10,7 @@ using System.Collections;
 
 namespace CSharpRodrigoCamini.Tests
 {
-    
+
     [TestFixture]
     public class LoginMantisTest : TestBase
     {
@@ -37,8 +38,8 @@ namespace CSharpRodrigoCamini.Tests
             loginFlows.EfetuarLogin(username, password);
 
             CollectionAssert.Contains(new[] { "Minha Visão - MantisBT", "My View - MantisBT" }, pageBase.GetTitle());
-           // Assert.AreEqual("Minha Visão - MantisBT", pageBase.GetTitle());
-            
+            // Assert.AreEqual("Minha Visão - MantisBT", pageBase.GetTitle());
+
         }
         [Test]
         public void LoginComFalha()
@@ -66,7 +67,7 @@ namespace CSharpRodrigoCamini.Tests
 
             loginMantisPage.ValidarTelaReajusteSenha();
 
-            Assert.IsTrue(loginMantisPage.ValidarTelaReajusteSenha().Contains("Reajuste de Senha"));                     
+            Assert.IsTrue(loginMantisPage.ValidarTelaReajusteSenha().Contains("Reajuste de Senha"));
         }
 
         [Test, TestCaseSource("EfetuarLoginAPartirDataDriven")]
@@ -81,9 +82,20 @@ namespace CSharpRodrigoCamini.Tests
             loginFlows.EfetuarLogin(username, password);
 
             Assert.AreEqual(mensagemSucessoEsperada, pageBase.GetTitle());
-
         }
 
+        [Test]
+        public void EfetuarLoginComSucessoDB()
+        {
+            #region Parameters          
+            string username = "administrator";
+            string password = "administrator";
+            #endregion         
 
+            loginFlows.EfetuarLogin(username, password);
+
+            CollectionAssert.Contains(new[] { "Minha Visão - MantisBT", "My View - MantisBT" }, pageBase.GetTitle());
+
+        }
     }
 }

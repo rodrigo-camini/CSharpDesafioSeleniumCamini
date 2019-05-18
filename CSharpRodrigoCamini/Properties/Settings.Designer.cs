@@ -25,18 +25,6 @@ namespace CSharpRodrigoCamini.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("chrome")]
-        public string BROWSER {
-            get {
-                return ((string)(this["BROWSER"]));
-            }
-            set {
-                this["BROWSER"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("30")]
         public string DEFAULT_TIMEOUT_IN_SECONDS {
             get {
@@ -121,18 +109,6 @@ namespace CSharpRodrigoCamini.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://mantis-prova.base2.com.br")]
-        public string DEFAUL_APPLICATION_URL {
-            get {
-                return ((string)(this["DEFAUL_APPLICATION_URL"]));
-            }
-            set {
-                this["DEFAUL_APPLICATION_URL"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("C:\\Users\\Rodrigo Camini\\Documents\\Reports\\")]
         public string REPORT_PATH {
             get {
@@ -145,19 +121,7 @@ namespace CSharpRodrigoCamini.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("192.168.99.100:8989")]
-        public string DB_URL {
-            get {
-                return ((string)(this["DB_URL"]));
-            }
-            set {
-                this["DB_URL"] = value;
-            }
-        }
-        
-        [global::System.Configuration.UserScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("remota")]
+        [global::System.Configuration.DefaultSettingValueAttribute("local")]
         public string EXECUTION {
             get {
                 return ((string)(this["EXECUTION"]));
@@ -169,13 +133,49 @@ namespace CSharpRodrigoCamini.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://192.168.99.100:4444/grid/console/wd/hub")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://192.168.99.100:4444/wd/hub")]
         public string SELENIUM_HUB {
             get {
                 return ((string)(this["SELENIUM_HUB"]));
             }
             set {
                 this["SELENIUM_HUB"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("192.168.99.100:8989")]
+        public string DEFAUL_APPLICATION_URL {
+            get {
+                return ((string)(this["DEFAUL_APPLICATION_URL"]));
+            }
+            set {
+                this["DEFAUL_APPLICATION_URL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("192.168.99.100")]
+        public string DB_URL {
+            get {
+                return ((string)(this["DB_URL"]));
+            }
+            set {
+                this["DB_URL"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("chrome")]
+        public string BROWSER {
+            get {
+                return ((string)(this["BROWSER"]));
+            }
+            set {
+                this["BROWSER"] = value;
             }
         }
     }
