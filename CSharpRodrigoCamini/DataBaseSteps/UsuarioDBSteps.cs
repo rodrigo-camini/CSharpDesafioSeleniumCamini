@@ -17,12 +17,5 @@ namespace CSharpRodrigoCamini.DataBaseSteps
             return DataBaseHelpers.RetornaDadosQuery(query)[0];
         }
       
-
-        public static string RetornaSenhaUsuario(string username)
-        {
-            string query = UsuariosQueries.RetornarNomeUsuario.Replace("$username", username);
-
-            return DataBaseHelpers.RetornaDadosQuery(query)[0];
-        }
     }
 }

@@ -106,3 +106,4 @@ C:\Users\Rodrigo Camini\Source\Repos\rodrigocamini\CSharpDesafioSeleniumCamini\C
 C:\Users\Rodrigo Camini\Source\Repos\rodrigocamini\CSharpDesafioSeleniumCamini\CSharpRodrigoCamini\obj\Debug\CSharpRodrigoCamini.csproj.CopyComplete
 C:\Users\Rodrigo Camini\Source\Repos\rodrigocamini\CSharpDesafioSeleniumCamini\CSharpRodrigoCamini\obj\Debug\CSharpRodrigoCamini.dll
 C:\Users\Rodrigo Camini\Source\Repos\rodrigocamini\CSharpDesafioSeleniumCamini\CSharpRodrigoCamini\obj\Debug\CSharpRodrigoCamini.pdb
+C:\Users\Rodrigo Camini\Source\Repos\rodrigocamini\CSharpDesafioSeleniumCamini\CSharpRodrigoCamini\obj\Debug\CSharpRodrigoCamini.Resource.ProjectsQueies.resources

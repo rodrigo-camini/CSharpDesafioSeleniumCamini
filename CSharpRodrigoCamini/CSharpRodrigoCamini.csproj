@@ -122,6 +122,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bases\PageBase.cs" />
+    <Compile Include="DataBaseSteps\ProjectsDBSteps.cs" />
     <Compile Include="DataBaseSteps\UsuarioDBSteps.cs" />
     <Compile Include="Flows\CriarTarefasFlows.cs" />
     <Compile Include="Flows\GerenciarCamposPersonalizadosFlows.cs" />
@@ -141,6 +142,11 @@
     <Compile Include="Pages\CriarTarefasPage.cs" />
     <Compile Include="Pages\GerenciarCamposPersonalizadosPage.cs" />
     <Compile Include="Pages\GerenciarConfiguracaoPage.cs" />
+    <Compile Include="Resource\ProjectsQueies.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProjectsQueies.resx</DependentUpon>
+    </Compile>
     <Compile Include="Tests\GerenciarConfiguracaoTests.cs" />
     <Compile Include="Pages\GerenciarMarcadoresPage.cs" />
     <Compile Include="Pages\GerenciarPage.cs" />
@@ -194,6 +200,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <EmbeddedResource Include="Resource\ProjectsQueies.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ProjectsQueies.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resource\UsuariosQueries.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>UsuariosQueries.Designer.cs</LastGenOutput>

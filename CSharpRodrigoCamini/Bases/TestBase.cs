@@ -1,4 +1,5 @@
 ﻿using Castle.DynamicProxy;
+using CSharpRodrigoCamini.DataBaseSteps;
 using CSharpRodrigoCamini.Helpers;
 using NUnit.Framework;
 using OpenQA.Selenium;
@@ -17,10 +18,19 @@ namespace CSharpRodrigoCamini.Uteis
         [OneTimeSetUp]
         public void OneTimeSetUp()
         {
-            ExtentReportHelpers.CreateReport();         
+            #region
+            string nomeProjeto = "Project " + GeneralHelpers.ReturnStringWithRandomNumbers(3);
+            string descricao = "Descrição gerada através de execução automática";
+            #endregion
+
+            ExtentReportHelpers.CreateReport();
+            ProjectsDBSteps project = new ProjectsDBSteps();
+            project.CreateProject(nomeProjeto, descricao);
+            
         }
 
         [SetUp]
+
         public void NavegadorChrome()
         {          
 
