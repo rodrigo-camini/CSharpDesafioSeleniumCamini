@@ -64,7 +64,7 @@ namespace CSharpRodrigoCamini.Helpers
         }
 
         //ENTENDER MELHOR ESSA CONEXÃO
-        public void DBRunQuery(string query)
+        public static void DBRunQuery(string query)
         {
             using (MySqlCommand cmd = new MySqlCommand(query, GetDBConnection()))
             {
@@ -81,14 +81,15 @@ namespace CSharpRodrigoCamini.Helpers
             }
         }
 
-        public string DeletarUsuario()
+        public static void ExecuteQuery(string query)
         {
-            string query = @"DELETE FROM mantis_user_table WHERE username = 'Editavel' ";
-            MySqlCommand cmd = new MySqlCommand(query, GetDBConnection());
-            cmd.Connection.Open();
-            cmd.ExecuteNonQuery();
-            cmd.Connection.Close();
-            return "1";
-        }
+            using (MySqlCommand cmd = new MySqlCommand(query, GetDBConnection()))
+            {
+                cmd.CommandTimeout = Int32.Parse(Properties.Settings.Default.DB_CONNECTION_TIMEOUT);
+                cmd.Connection.Open();
+                cmd.ExecuteNonQuery();
+                cmd.Connection.Close();
+            }
+        }      
     }
 }

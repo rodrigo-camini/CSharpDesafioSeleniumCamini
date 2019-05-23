@@ -118,8 +118,8 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="CriarProjeto" xml:space="preserve">
-    <value>INSERT INTO `mantis_project_table` (`id`, `name`, `status`, `enabled`, `view_state`, `access_min`, `file_path`, `description`, `category_id`, `inherit_global`) 
+    <value>INSERT INTO mantis_project_table (name, status, enabled, view_state, access_min, file_path, description, category_id, inherit_global) 
 	VALUES
-	 (1, '$project', 10, 1, 10, 10, '', '$description', 1, 1);";</value>
+	 ('$project', 10, 1, 10, 10, '', '$description', 1, 1);</value>
   </data>
 </root>

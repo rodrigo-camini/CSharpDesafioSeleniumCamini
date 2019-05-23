@@ -18,21 +18,23 @@ namespace CSharpRodrigoCamini.Uteis
         [OneTimeSetUp]
         public void OneTimeSetUp()
         {
-            #region
-            string nomeProjeto = "Project " + GeneralHelpers.ReturnStringWithRandomNumbers(3);
-            string descricao = "Descrição gerada através de execução automática";
-            #endregion
+           
 
             ExtentReportHelpers.CreateReport();
-            ProjectsDBSteps project = new ProjectsDBSteps();
-            project.CreateProject(nomeProjeto, descricao);
+            
             
         }
 
         [SetUp]
 
         public void NavegadorChrome()
-        {          
+        {
+            #region
+            string nomeProjeto = "Project " + GeneralHelpers.ReturnStringWithRandomNumbers(3);
+            string descricao = "Descrição gerada através de execução automática";
+            #endregion            
+
+            ProjectsDBSteps.CreateProject(nomeProjeto, descricao);
 
             ExtentReportHelpers.AddTest();
             DriverFactory.CreateInstance();         
@@ -52,8 +54,7 @@ namespace CSharpRodrigoCamini.Uteis
         {
             ExtentReportHelpers.AddTestResult();
             DriverFactory.INSTANCE.Close();
-            DriverFactory.INSTANCE.Quit();
-           
+            DriverFactory.INSTANCE.Quit();           
         }
                
         [OneTimeTearDown]

@@ -20,7 +20,7 @@ namespace CSharpRodrigoCamini.Pages
 
         public string ValidarTelaHome()
         {
-            return GetText(telaHomeText);
+            return GetTitle();
         }
 
         public void ClicarBotaoAtribuidosAMim()

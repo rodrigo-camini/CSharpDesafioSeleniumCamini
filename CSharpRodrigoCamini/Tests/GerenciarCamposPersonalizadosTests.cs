@@ -73,7 +73,7 @@ namespace CSharpRodrigoCamini.Tests
             gerenciarCamposPersonalizadosPage.PreencherCampoPersonalizado(novoCampo);
             gerenciarCamposPersonalizadosPage.ClicarNovoCampoPersonalizado();
 
-            Assert.IsTrue(gerenciarCamposPersonalizadosPage.MensagemCampoDuplicadoPerson().Contains("Este é um nome duplicado"));
+            Assert.IsTrue(gerenciarCamposPersonalizadosPage.MensagemCampoDuplicadoPerson().Contains("Este é um nome duplicado."));
         }
     }
 }

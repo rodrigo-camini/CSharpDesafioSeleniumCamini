@@ -20,6 +20,7 @@ namespace CSharpRodrigoCamini.Pages
         By categoriaGlobalField = By.Name("name");
         By categoriaGlobalButton = By.XPath("//input[@value='Adicionar Categoria']");
         By verificaTelaProjetos = By.XPath("//div[@id='main-container']/div[2]/div[2]/div/div/div[2]/div/h4");
+        
 
         public string ValidarGuiaGerenciarProjetos()
         {
@@ -70,6 +71,8 @@ namespace CSharpRodrigoCamini.Pages
         {
             Click(categoriaGlobalButton);
         }
+
+       
 
     }
 }

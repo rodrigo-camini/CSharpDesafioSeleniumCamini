@@ -85,8 +85,9 @@ namespace CSharpRodrigoCamini.Tests
             #endregion
 
             loginFlows.EfetuarLogin(usuario, password);
-            homeMantisPage.ValidarTelaHome();
-            criarTarefasFlows.CriarNovaTarefa(categoria, resumo, descricao);
+            homeMantisPage.ValidarTelaHome().Contains("Minha Visão - MantisBT");
+            
+            criarTarefasFlows.CriarNovaTarefa(categoria, resumo, descricao);            
 
             Assert.AreEqual(mensagemUsuarioCriado, criarTarefasPage.MensagemTarefaCriada());
 

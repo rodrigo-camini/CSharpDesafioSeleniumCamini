@@ -61,9 +61,9 @@ namespace CSharpRodrigoCamini.Resource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to INSERT INTO `mantis_project_table` (`id`, `name`, `status`, `enabled`, `view_state`, `access_min`, `file_path`, `description`, `category_id`, `inherit_global`) 
+        ///   Looks up a localized string similar to INSERT INTO mantis_project_table (name, status, enabled, view_state, access_min, file_path, description, category_id, inherit_global) 
         ///	VALUES
-        ///	 (1, &apos;$project&apos;, 10, 1, 10, 10, &apos;&apos;, &apos;$description&apos;, 1, 1);&quot;;.
+        ///	 (&apos;$project&apos;, 10, 1, 10, 10, &apos;&apos;, &apos;$description&apos;, 1, 1);.
         /// </summary>
         internal static string CriarProjeto {
             get {

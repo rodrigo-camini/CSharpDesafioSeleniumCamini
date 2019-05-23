@@ -17,14 +17,11 @@ namespace CSharpRodrigoCamini.DataBaseSteps
         {
         }
 
-        public string CreateProject(string projectName, string description)
+        public static void CreateProject(string projectName, string description)
         {
             string query = ProjectsQueies.CriarProjeto.Replace("$project", projectName).Replace("$description", description);
 
-            DataBaseHelpers dataBaseHelpers = new DataBaseHelpers();
-            dataBaseHelpers.DBRunQuery(query);
-
-            return DataBaseHelpers.RetornaDadosQuery(query)[0];
+            DataBaseHelpers.ExecuteQuery(query);
         }
 
     }

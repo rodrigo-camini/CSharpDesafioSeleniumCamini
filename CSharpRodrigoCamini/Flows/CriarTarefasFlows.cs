@@ -1,4 +1,5 @@
 ﻿using CSharpRodrigoCamini.Pages;
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +18,9 @@ namespace CSharpRodrigoCamini.Flows
         }
 
         public void CriarNovaTarefa(string categoria, string resumo, string descricao)
-        {
+        {            
             criarTarefasPage.CiclarBotaoCriarTarefa();
+            Assume.That(criarTarefasPage.VerifcarSeExisteProjeto());
             criarTarefasPage.SelecionarCategoria(categoria);
             criarTarefasPage.PreencherResumo(resumo);
             criarTarefasPage.PreencherDescricao(descricao);

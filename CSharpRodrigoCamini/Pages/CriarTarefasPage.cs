@@ -19,6 +19,7 @@ namespace CSharpRodrigoCamini.Pages
         By descricaoField = By.Id("description");
         By criarNovaTarefaButton = By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='* requerido'])[1]/following::input[1]");
         By mensagemTarefaCriadaText = By.XPath("//div[@id='main-container']/div[2]/div[2]/div/div/div/div[2]/p");
+        By verifcaProjetoExiste = By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='Visibilidade'])[1]/following::td[1]");
         #endregion
 
         public void SelecionarAtribuirAComboBox(string atribuir)
@@ -71,6 +72,10 @@ namespace CSharpRodrigoCamini.Pages
             return GetAttribute(descricaoField, resumo);
         }
 
+        public bool VerifcarSeExisteProjeto()
+        {
+            return ReturnIfElementIsDisplayedEdited(verifcaProjetoExiste);
+        }
 
     }
 }

@@ -17,7 +17,7 @@ namespace CSharpRodrigoCamini.Pages
         By campoPersonButton = By.XPath("//input[@value='Novo Campo Personalizado']");
         By tabelaMarcador = By.TagName("table");
         By tbody = By.TagName("tbody");
-        By mensagenCampoDuplicado = By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='administrador'])[1]/following::div[6]");
+        By mensagenCampoDuplicado = By.XPath("(.//*[normalize-space(text()) and normalize-space(.)='administrador'])[1]/following::div[7]");
         #endregion
 
         public void ClicarGuiaCamposPersonalizados()
